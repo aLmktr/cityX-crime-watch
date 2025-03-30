@@ -23,5 +23,8 @@ USER streamlituser
 # expose streamlit default port
 EXPOSE 8501
 
+# cd to src 
+WORKDIR /app/src
+
 # run the app 
 CMD ["streamlit", "run", "src/app.py", "--server.port=8501", "--server.address=0.0.0.0"]
