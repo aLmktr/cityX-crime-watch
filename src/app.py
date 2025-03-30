@@ -48,7 +48,8 @@ def create_folium_map(df):
 # app title
 st.title("CityX Crime Watch 🖥️")
 
-df = pd.read_csv("../data/dataset-cleaned.csv")
+df = pd.read_csv(os.path.join(os.path.dirname(__file__), "../data/dataset-cleaned.csv"))
+
 folium_map = create_folium_map(df)
 st.components.v1.html(folium_map._repr_html_(), height=650)
 
