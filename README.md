@@ -22,35 +22,35 @@ cd cityX-crime-watch
 <details open>
     <summary> 🐋 Build with Docker - Recommended </summary>
 
-    1.  Run and build the docekr container
+1. Run and build the Docker container:
 
-        ```bash
-        docker compose up --build
-        ```
+   ```bash
+   docker compose up --build
+   ```
 
 </details>
 
 <details>
     <summary>🗃️ Build it yourself</summary>
     
-    1. Create a virtual environment:
+1. Create a virtual environment:
 
-       ```bash
-       python -m venv venv
-       source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-       ```
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+```
 
-    2. Install dependencies:
+2. Install dependencies:
 
-       ```bash
-       pip install -r requirements.txt
-       ```
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-    3. Run the application:
+3. Run the application:
 
-       ```bash
-       streamlit run src/app.py
-       ```
+   ```bash
+   streamlit run src/app.py
+   ```
 
 </details>
 
